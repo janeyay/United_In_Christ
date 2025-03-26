@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+#Our-Vision .text-content {
+    padding: 20px;
+}
+
+#Our-Vision .styled-line {
+    border: none;
+    height: 2px;
+    background: black;
+    width: 50px;
+    margin: 10px 0;
+}
+
+#Our-Vision .blockquote {
+    font-style: italic;
+    color: #6c757d;
+    font-size: 16px;
+    margin-top: 30px;
+}
+#Our-Vision .spacings{
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+#Our-Vision .img-fluid {
+    border-radius: 8px;
+}
+
+#Our-Vision .container img{
+    height: 450px;
+    width: auto;
+    justify-content: flex-end;
+}
+
+#Our-Vision .container .our-vision-image{
+    justify-content: flex-end;
+    width: 500px;
+    /* border: 2px solid black; */
+}
+
+#Our-Vision .container .our-vision-text .cust_text{
+    /* border: 1px solid black;  */
+    /* margin-top: 15px; */
+    /* padding-top: 20px;    */
+}
+
+#Our-Vision{
+    /* border: 2px solid black;
+    padding-top: 10px; */
+}
+
+#Our-Vision .container .our-vision-text{
+    /* border: 2px solid black; */
+    height: 500px;
+    padding: 70px;
+    padding-left: 0;
+
+}
+
+#Our-Vision .container{
+    /* border: 2px solid black; */
+}
+
+#Our-Vision .container .row{
+    /* border: 2px solid black; */
+   justify-content: center;
+}

@@ -1,0 +1,139 @@
+#nav_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: fixed;
+    padding: 15px 50px;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+body{
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.header-logo img {
+    height: 50px;
+}
+
+.header-logo {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    gap: 10px;
+}
+
+ #nav_section nav{
+    align-items: center;
+    display: flex;
+}
+
+
+#nav_section nav .cus_header {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: auto;
+    background-color: transparent;
+}
+
+#nav_section nav .cus_header li {
+    margin: 0 15px;
+}
+
+#nav_section nav .cus_header li a {
+    text-decoration: none;
+    color: #b22222;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#nav_section nav .head_right ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+}
+
+#nav_section nav .head_right li a{
+    text-decoration: none;
+    color: #b22222;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* head section */
+.head {
+    position: relative;
+    height: 100vh;
+    background: url('../images/churchcross.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.overlay::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.content{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.head .content p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 550px;
+    letter-spacing: 1.5px;
+}
+
+.head .content h1{
+    font-size: 55px;
+    color: #aa1f23;
+}
+
+/* Social Sidebar */
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #5c0d0d;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-sidebar a {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    font-size: 18px;
+}
