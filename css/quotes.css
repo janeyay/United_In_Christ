@@ -1,0 +1,45 @@
+#quote_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.quote_container {
+    position: relative;
+    /* max-width: 1200px; */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+
+.cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    font-weight: bold;
+    color: rgba(172, 31, 31, 0.8);
+    opacity: 0.1;
+    z-index: 0;
+}
+.quote {
+    position: relative;
+    font-size: 25px;
+    color: #2d3e50;
+    z-index: 1;
+    margin: auto;
+}
+.reference {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+   color: #aa1f23;
+    z-index: 1;
+}
