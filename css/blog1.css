@@ -9,8 +9,8 @@
     background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)),url('../images/blue\ see.png') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 700px;
-    padding-top: 60px;
+    height: 100vh;
+    padding-top: 70px;
 }
 
 #Blogs_sec .content_parts{
@@ -18,6 +18,12 @@
     flex-direction: column;
     gap: 10px;
 }
+
+#Blogs_sec .container h2{
+    font-size: 36px;
+}
+
+
 #Blogs_sec  .swiper-pagination{
     display: flex;
     gap: 10px;
@@ -97,7 +103,7 @@
 
 #Blogs_sec .card-wrapper {
     margin: 0 60px 35px;
-    padding: 30px 10px;
+    padding-top: 70px;
     overflow: hidden;
     max-width: 1200px;
   }
@@ -121,10 +127,31 @@
   }
 
 
-  #Blogs_sec .card-wrapper .swiper-slide-button {
-    color: #5372F0;
-    margin-top: -35px;
+
+#Blogs_sec .slider_buttons_blogs{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    right: 90px;
+    top: 85px;
+    
+}
+#Blogs_sec .slider_buttons_blogs .swiper-button-next,
+#Blogs_sec .slider_buttons_blogs .swiper-button-prev {
+    overflow: hidden;
+    color: #7d7878; 
+}
+#Blogs_sec .slider_buttons_blogs .swiper-slide-button {
+    width: 20px; 
+    height: 20px;
+    
+    
+    
   }
+
+
+
+  
   
   @media (max-width: 768px) {
     #Blogs_sec .card-wrapper {

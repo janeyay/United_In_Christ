@@ -101,20 +101,31 @@ body{
 }
 
 .content i {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .head .content p{
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 550px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    max-width: 600px;
     letter-spacing: 1.5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 .head .content h1{
-    font-size: 55px;
+    font-size: 65px;
     color: #aa1f23;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.head .content span{
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 8px;
+    font-size: 16px;
 }
 
 /* Social Sidebar */

@@ -7,7 +7,7 @@ body {
 }
 
 #Our-Vision .text-content {
-    padding: 20px;
+    padding: 40px;
 }
 
 #Our-Vision .styled-line {
@@ -21,8 +21,9 @@ body {
 #Our-Vision .blockquote {
     font-style: italic;
     color: #6c757d;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 30px;
+    letter-spacing: 1.5px;
 }
 #Our-Vision .spacings{
     margin-top: 20px;
@@ -34,8 +35,9 @@ body {
 }
 
 #Our-Vision .container img{
-    height: 450px;
-    width: auto;
+    height: 60vh;
+    /* width: auto; */
+    margin: 0 auto;
     justify-content: flex-end;
 }
 
@@ -45,31 +47,31 @@ body {
     /* border: 2px solid black; */
 }
 
-#Our-Vision .container .our-vision-text .cust_text{
-    /* border: 1px solid black;  */
-    /* margin-top: 15px; */
-    /* padding-top: 20px;    */
-}
-
-#Our-Vision{
-    /* border: 2px solid black;
-    padding-top: 10px; */
-}
 
 #Our-Vision .container .our-vision-text{
-    /* border: 2px solid black; */
     height: 500px;
     padding: 70px;
     padding-left: 0;
     margin-left: 70px;
+    font-size: 20px;
 
-}
-
-#Our-Vision .container{
-    /* border: 2px solid black; */
 }
 
 #Our-Vision .container .row{
-    /* border: 2px solid black; */
    justify-content: center;
+}
+
+#Our-Vision .container{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 70px;
+}
+
+#Our-Vision .container .our-vision-text h2{
+    font-size: 40px;
+}
+
+#Our-Vision .container .our-vision-text em{
+font-size: 18px;
+font-family: 'Charm', sans-serif ;
 }

@@ -18,6 +18,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        .opacity-0 {
+            opacity: 0;
+        }
+
+        .styled-line {
+            border-top: 3px solid #dc3545;
+            width: 60px;
+        }
+
+        .spacings {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
 
 </head>
 <body>
@@ -72,10 +90,10 @@
                     <div class="head">
                         <div class="content">
                             <i class="fas fa-church"></i>
-                            <h1>UNITED IN CHRIST</h1>
-                            <p>There is neither Jew nor Greek, there is neither slave nor free man, there is neither male nor female; 
+                            <h1 class="animate__animated animate__fadeInUp">United In Christ</h1>
+                            <p class="animate__animated animate__fadeInUp animate__delay-1s" >There is neither Jew nor Greek, there is neither slave nor free man, there is neither male nor female; 
                             for you are all one in Christ Jesus.</p>
-                            <span class="verse">- Gal 3:28</span>
+                            <span class="verse animate__animated animate__fadeInUp animate__delay-2s">- Gal 3:28</span>
                         </div>
                         <div class="overlay"></div>
                     </div>
@@ -84,10 +102,10 @@
                 <div class="head">
                     <div class="content">
                         <i class="fas fa-church"></i>
-                        <h1>UNITED IN CHRIST</h1>
-                        <p>There is neither Jew nor Greek, there is neither slave nor free man, there is neither male nor female; 
-                        for you are all one in Christ Jesus.</p>
-                        <span class="verse">- Gal 3:28</span>
+                        <h1 class="animate__animated animate__fadeInUp">United In Christ</h1>
+                        <p class="animate__animated animate__fadeInUp animate__delay-1s" >There is neither Jew nor Greek, there is neither slave nor free man, there is neither male nor female; 
+                                for you are all one in Christ Jesus.</p>
+                        <span class="verse animate__animated animate__fadeInUp animate__delay-2s">- Gal 3:28</span>
                     </div>
                     <div class="overlay"></div>
                 </div>
@@ -96,10 +114,10 @@
                 <div class="head">
                     <div class="content">
                         <i class="fas fa-church"></i>
-                        <h1>UNITED IN CHRIST</h1>
-                        <p>There is neither Jew nor Greek, there is neither slave nor free man, there is neither male nor female; 
-                        for you are all one in Christ Jesus.</p>
-                        <span class="verse">- Gal 3:28</span>
+                        <h1 class="animate__animated animate__fadeInUp">United In Christ</h1>
+                        <p class="animate__animated animate__fadeInUp animate__delay-1s" >There is neither Jew nor Greek, there is neither slave nor free man, there is neither male nor female; 
+                            for you are all one in Christ Jesus.</p>
+                        <span class="verse animate__animated animate__fadeInUp animate__delay-2s">- Gal 3:28</span>
                     </div>
                     <div class="overlay"></div>
                 </div>
@@ -126,18 +144,19 @@
 
 <!-- OUR VISION SECTION -->
 
-<section id="Our-Vision" data-aos="fade-up">
+
+<section id="Our-Vision">
     <div class="container my-5">
         <div class="row align-items-center">
             <!-- Image Section -->
-            <div class="col-md-6 our-vision-image">
+            <div class="col-md-6 our-vision-image opacity-0" id="vision-image">
                 <img src="../images/praying image.avif" alt="Church" class="img-fluid rounded shadow">
             </div>
-    
+
             <!-- Text Content Section -->
-            <div class="col-md-6 text-content our-vision-text">
+            <div class="col-md-6 text-content our-vision-text opacity-0" id="vision-text">
                 <p class="text-uppercase text-danger fw-bold">United in Christ</p>
-                <h2 class="fw-bold">Our Vision is to help you</h2>
+                <h2 class="fw-bold">Our Vision is to help you grow in the Lord</h2>
                 <hr class="styled-line spacings">
                 <p class="text-muted cust_text spacings">
                     The love of God has been displayed through Jesus Christ. How are you displaying Christ's love in your life?
@@ -151,7 +170,63 @@
             </div>
         </div>
     </div>
-    </section>
+</section>
+
+<!-- Intersection Observer Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.id === "vision-image") {
+                        entry.target.classList.remove("opacity-0");
+                        entry.target.classList.add("animate__animated", "animate__fadeInLeft");
+                    }
+                    if (entry.target.id === "vision-text") {
+                        entry.target.classList.remove("opacity-0");
+                        entry.target.classList.add("animate__animated", "animate__fadeInRight");
+                    }
+                    observer.unobserve(entry.target); // Remove if you want only once
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+
+        const image = document.getElementById("vision-image");
+        const text = document.getElementById("vision-text");
+
+        observer.observe(image);
+        observer.observe(text);
+    });
+</script>
+
+<!-- <section id="Our-Vision">
+    <div class="container my-5">
+        <div class="row align-items-center">
+             Image Section 
+            <div class="col-md-6 our-vision-image">
+                <img src="../images/praying image.avif" alt="Church" class="img-fluid rounded shadow animate__animated animate__fadeInLeft">
+            </div>
+    
+             Text Content Section
+            <div class="col-md-6 text-content our-vision-text animate__animated animate__fadeInRight">
+                <p class="text-uppercase text-danger fw-bold">United in Christ</p>
+                <h2 class="fw-bold">Our Vision is to help you grow in the Lord </h2>
+                <hr class="styled-line spacings">
+                <p class="text-muted cust_text spacings">
+                    The love of God has been displayed through Jesus Christ. How are you displaying Christ's love in your life?
+                </p>
+                <blockquote class="blockquote">
+                    <em>
+                        "For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life."  
+                        <br> - John 3:16
+                    </em>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    </section> -->
 
 
     <!-- PRAYERS -->
@@ -233,6 +308,13 @@
         <div class="container swiper">
             <h2 class="text-center blog-title">Our Blogs</h2>
             <div class="card-wrapper">
+            <div class="slider_buttons_container">
+            <div class="slider_buttons_blogs">
+                <!-- <i class="fa-solid fa-angle-left" style="color: #7d7878;"></i> -->
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next coloring-class"></div>  
+            </div>
+            </div>
             <ul class="card-list swiper-wrapper">
                 <li class="card-item swiper-slide">
                     <img src="../images/praying image.avif" class="card-img-top" alt="Church">
@@ -276,10 +358,9 @@
                 </li>
             </ul>
      
-            <div class="swiper-pagination"></div>
-          
-            <div class="swiper-slide-button swiper-button-prev"></div>
-            <div class="swiper-slide-button swiper-button-next"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+
+            
             </div>
             <div class="text-center mt-4">
                 <button class="btn see_more">See All</button>
@@ -289,7 +370,7 @@
 
 
     <!-- CONTACTUS -->
-    <section id="contact" data-aos="fade-up">
+    <section id="contact">
         <div class="contact-section">
             <div class="contact-container bringing_front">
                 <div class="contact-section-items ">

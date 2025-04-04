@@ -8,7 +8,8 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
+    height: 90vh;
 }
 
 
@@ -91,5 +92,9 @@
 #our_prayers .ribbon img{
     width: 25px;
     height: auto;
+}
+
+#our_prayers .container .section-title h2{
+    font-size: 36px;
 }
 
