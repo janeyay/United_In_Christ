@@ -1,0 +1,134 @@
+#mainCardContent{
+    margin: 80px 100px 0 100px;
+}
+
+/* #mainCardContent .container-fluid{
+    border: 1px solid black ;
+} */
+ 
+ #mainCardContent .sidebar-bg {
+    height: 50vh;
+  }
+  
+  #mainCardContent .sidebar-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #47525e;
+  }
+  
+
+
+  #mainCardContent .sidebar-box p{
+    margin-left: 0px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  #mainCardContent .sidebar-box h4{
+    margin-left: 0px;
+    text-align: center;
+  }
+  
+  #mainCardContent .sidebar-box i{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+  }
+
+  #mainCardContent .song-card {
+    background-color: #f4e9ef;
+    border-radius: 15px;
+    
+  }
+  
+  #mainCardContent .music-card {
+    background-color: #f5edf0;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+    color: white;
+    position: relative;
+  }
+
+  #mainCardContent .cardMainContent a{
+  text-align: center;
+  }
+
+  /* #mainCardContent .cardMainContent{
+    border: 1px solid black;
+  } */
+
+  #mainCardContent .profile-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('../images/360_F_194047062_kOrMcROcdjSFeaUH8ZwIhWDELlG4mI5N.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: -55px;
+    top: -50px;
+  }
+
+  #mainCardContent .music-icon-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mainCardContent .music-info {
+    margin-left: 50px;
+  }
+
+  #mainCardContent .music-info h5 {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+
+  #mainCardContent .music-info small {
+    color: #000000;
+  }
+
+  #mainCardContent .stat-icon {
+    color: #000000;
+    margin-right: 5px;
+  }
+
+  #mainCardContent .headphones-img {
+    opacity: 0.5;
+    height: 100px;
+    margin: 0 10px 0 0;
+  }
+
+  #mainCardContent .stats {
+    font-size: 0.9rem;
+    color: #000000;
+  }
+
+  #mainCardContent .gap-3 {
+    margin-right: 1rem;
+  }
+
+  #mainCardContent .liked-song {
+    border: 1px solid #ccc;
+  }
+
+  #mainCardContent .liked-song img{
+    height: 30px;
+    width: 30px;
+  }
+  
