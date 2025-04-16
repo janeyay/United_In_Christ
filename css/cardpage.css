@@ -8,6 +8,8 @@
  
  #mainCardContent .sidebar-bg {
     height: 50vh;
+    /* border: 1px solid red;
+     */
   }
   
   #mainCardContent .sidebar-box {
@@ -16,7 +18,7 @@
     background-color: #47525e;
   }
   
-
+  
 
   #mainCardContent .sidebar-box p{
     margin-left: 0px;
@@ -36,25 +38,29 @@
     padding-right: 10px;
   }
 
-  #mainCardContent .song-card {
-    background-color: #f4e9ef;
-    border-radius: 15px;
-    
-  }
+  
   
   #mainCardContent .music-card {
-    background-color: #f5edf0;
+    background-color: #f5e8e8;
     border-radius: 5px;
     padding: 5px;
     max-width: 500px;
+    height: min-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2rem auto;
+    margin: 10px auto;
     color: white;
     position: relative;
+    left: 30px;
   }
 
+  .margin-aligner{
+    margin-left: 50px;
+  }
+  #mainCardContent .cardMainContent{
+    padding-left: 70px;
+  }
   #mainCardContent .cardMainContent a{
   text-align: center;
   }
@@ -64,15 +70,15 @@
   } */
 
   #mainCardContent .profile-circle {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-image: url('../images/360_F_194047062_kOrMcROcdjSFeaUH8ZwIhWDELlG4mI5N.jpg');
     background-size: cover;
     background-position: center;
     position: absolute;
-    left: -55px;
-    top: -50px;
+    left: -45px;
+    top: -40px;
   }
 
   #mainCardContent .music-icon-center {
@@ -95,28 +101,32 @@
   }
 
   #mainCardContent .music-info h5 {
+    font-size: medium;
     font-weight: 700;
     color: rgb(0, 0, 0);
   }
 
   #mainCardContent .music-info small {
-    color: #000000;
+    margin: 0 0 0 2px;
+    font-size:12px ;
+    color: #474747;
   }
-
+  
   #mainCardContent .stat-icon {
-    color: #000000;
+    color: #474747;
+    
     margin-right: 5px;
   }
 
   #mainCardContent .headphones-img {
     opacity: 0.5;
-    height: 100px;
-    margin: 0 10px 0 0;
+    height: 80px;
+    margin: 0 20px 0 0;
   }
 
   #mainCardContent .stats {
-    font-size: 0.9rem;
-    color: #000000;
+    font-size: 10px;
+    color: #474747;
   }
 
   #mainCardContent .gap-3 {
