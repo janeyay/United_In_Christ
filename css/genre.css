@@ -18,12 +18,16 @@
   }
   
   #choose-genre .genre-header .overlay {
-    font-family: 'DM Serif Display', serif;
-    font-size: 80px;
+   
+    /* font-size: 300px; */
     color: #ffffff;
     max-width: 90%;
     z-index: 2 !important;
     
+  }
+  #choose-genre .genre-header h1{
+    font-size: 50px;
+    font-family: 'DM Serif Display', serif;
   }
 
 
@@ -32,6 +36,9 @@
   #choose-genre .genre-section {
     text-align: center;
     padding: 50px 0;
+  }
+  #choose-genre .genre-section h2{
+    font-family: 'Arial', sans-serif;
   }
 
   #choose-genre .genre-section:nth-child(2){
@@ -51,13 +58,24 @@
     border-radius: 5px;
   }
 
+  /* #choose-genre .vinyl {
+    position: absolute;
+    top: 3px;
+    right: -75px;
+    width: 160px;
+    z-index: -5;
+  } */
   #choose-genre .vinyl {
     position: absolute;
     top: 3px;
     right: -75px;
     width: 160px;
     z-index: -5;
+   animation: spin 4s linear infinite;
   }
+  
+
+  
   #choose-genre .genre-info {
     position: absolute;
     top: 40%;
@@ -93,18 +111,18 @@
   }
 
 
-    .spin {
+    /* .spin {
       transition: transform 0.3s;
+    } */
+    
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
     
-    .spin:hover {
-      animation: spin 3s linear infinite;
+    #choose-genre .vinyl:hover {
+      animation: spin 2s linear infinite;
     }
-
-  @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-  }
 
 
 
